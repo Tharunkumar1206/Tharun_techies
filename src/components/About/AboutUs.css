@@ -1,0 +1,79 @@
+/* About Us Container */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background-color: #ffffff;
+    color: white;
+    position: relative;
+    margin-top: 10%;
+  }
+  
+  /* Left Side - Image */
+  .about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .about-image img {
+    max-width: 90%;
+    height: auto;
+  }
+  
+  /* Right Side - Text */
+  .about-content {
+    flex: 1;
+    padding-left: 50px;
+  }
+  
+  .about-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #3182ce; /* Blue color */
+  }
+  
+  .about-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 15px 0;
+    color: #000;
+  }
+  
+  /* Button Styling */
+  .about-button {
+    background-color: #3182ce;
+    color: #000000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .about-button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Stats Section */
+  .about-stats {
+    margin-top: 20px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 5px;
+    font-size: 5px;
+    font-weight: bold;
+    color: #ccc;
+  }
+  
+  .about-stats span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 12px;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+  

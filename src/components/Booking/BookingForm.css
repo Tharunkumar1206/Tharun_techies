@@ -1,0 +1,120 @@
+.booking-container {
+    background: #fff;
+    padding: 40px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    top: 20px;
+  }
+  
+  .booking-title {
+    color: #0d3b66;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .booking-subtitle {
+    font-size: 0.9rem;
+    color: gray;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Row Layout for Full Name & Available Date */
+  .row {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  .row .form-group {
+    flex: 1;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+
+  /* Time Group Styling */
+  .time-group {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+  }
+  
+  .time-group input {
+    flex: 1;
+  }
+  
+  .time-btn {
+    padding: 0px;
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Phone Number Input */
+  .phone-group {
+    width: 50%;
+  }
+  
+  .phone-group .phone-input {
+    display: flex;
+    width: 100%;
+  }
+  
+  .country-code {
+    width: 70px;
+    border-right: none;
+    text-align: center;
+  }
+  
+  .phone-input input {
+    flex: 1;
+    border-left: none;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    background: #0d3b66;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 20%;
+    display: block;
+    margin: 20px auto; /* Auto centers horizontally */
+    text-align: center;
+  }
+  
+  .submit-btn:hover {
+    background: #0b2e52;
+  }
+  

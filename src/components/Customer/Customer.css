@@ -1,0 +1,65 @@
+/* Customers Section */
+.customers-container {
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: row; /* Stack text and grid properly */
+    align-items: center; /* Center-align contents */
+    gap: 250px;
+}
+
+.customers-text{
+    margin-left: 30px;
+}
+/* Heading Styles */
+.customers-text h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff; /* Blue color */
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Description Text */
+.customers-text p {
+    color: #555;
+    max-width: 400px;
+    margin: 0 auto 20px;
+    text-align: justify;
+}
+
+/* Grid Layout for Customer Logos */
+.customers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    justify-content: start; /* Align items to the left */
+    max-width: 400px; /* Adjust width as needed */
+}
+
+/* Image Styling */
+.customer-logo {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease-in-out; /* Add hover effect */
+}
+
+/* Hover Effect */
+.customer-logo:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .customers-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .customers-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+        max-width: 200px;
+    }
+}

@@ -1,0 +1,116 @@
+/* General Styles */
+.healthcare-container {
+    width: 90%;
+    margin: 10% auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Section */
+  .header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .text-content {
+    max-width: 50%;
+  }
+  
+  .bold-text {
+    font-weight: bold;
+    color: #333;
+    font-size: 2rem;
+  }
+  
+  .blue-text {
+    color: #0073e6;
+    font-size: 2rem;
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .doctor-image img {
+    width: 300px;
+    height: auto;
+  }
+  
+  /* Services Section */
+  .services-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 10px;
+  }
+  
+  .service-card {
+    width: 30%;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  .service-card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: justify;
+  }
+  
+  .service-card .service-icon {
+    width: 100px;
+    position: absolute;
+    bottom: -30px;
+    left: 70%;
+    transform: translateX(-50%);
+  }
+  
+  /* Background Colors */
+  .blue {
+    background-color: #0073e6;
+  }
+  
+  .green {
+    background-color: #33cc33;
+  }
+  
+  .orange {
+    background-color: #ff9933;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-content {
+      max-width: 100%;
+    }
+  
+    .doctor-image img {
+      width: 200px;
+    }
+  
+    .services-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  

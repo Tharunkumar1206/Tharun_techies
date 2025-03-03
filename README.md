@@ -1,5 +1,6 @@
 
 ## run command 
 
-    npm install,
+    npm install
+    
     npm run dev

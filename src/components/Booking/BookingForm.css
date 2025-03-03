@@ -1,5 +1,5 @@
 body {
-  background-color: #f5f7fa; /* Light grayish-blue */
+  background-color: #f5f7fa; 
 }
 
 .booking-container {
@@ -33,7 +33,6 @@ body {
     gap: 15px;
   }
   
-  /* Row Layout for Full Name & Available Date */
   .row {
     display: flex;
     gap: 10px;
@@ -58,13 +57,19 @@ body {
   .form-group input,
   .form-group select {
     padding: 10px;
+    width:90%;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
   }
-  
+  .form-groups input,
+  .form-groups select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
 
-  /* Time Group Styling */
   .time-group {
     display: flex;
     flex-direction: row;
@@ -76,7 +81,7 @@ body {
   }
   
   .time-btn {
-    padding: 5px;
+    padding: 12px;
     border: 1px solid #ccc;
     background: #f0f0f0;
     cursor: pointer;
@@ -85,7 +90,6 @@ body {
   
   }
   
-  /* Phone Number Input */
   .phone-group {
     width: 50%;
   }
@@ -106,7 +110,6 @@ body {
     border-left: none;
   }
   
-  /* Submit Button */
   .submit-btn {
     background: #0d3b66;
     color: white;
@@ -117,11 +120,13 @@ body {
     border-radius: 5px;
     width: 20%;
     display: block;
-    margin: 20px auto; /* Auto centers horizontally */
+    margin: 20px auto; 
     text-align: center;
   }
   
   .submit-btn:hover {
     background: #0b2e52;
   }
+  
+
   

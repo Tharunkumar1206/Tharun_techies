@@ -14,7 +14,7 @@ const assests = {
     venkat: new URL('./venkat.png', import.meta.url).href,
     glen: new URL('./glen.png', import.meta.url).href,
     remote: new URL('./remote.png', import.meta.url).href,
-    
+    curve: new URL('./curve.png', import.meta.url).href,
   };
   
   export default assests;

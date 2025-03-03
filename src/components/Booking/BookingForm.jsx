@@ -11,7 +11,6 @@ const BookingForm = () => {
       </p>
 
       <form className="booking-form">
-        {/* Full Name & Available Date Container */}
         <div className="row">
           <div className="form-group">
             <label>Full Name</label>
@@ -42,7 +41,7 @@ const BookingForm = () => {
         </div>
 
         {/* Phone Number */}
-        <div className="form-group phone-group">
+        <div className="form-groups phone-group">
           <label>Phone Number</label>
           <div className="phone-input">
             <select className="country-code">
@@ -62,3 +61,5 @@ const BookingForm = () => {
 };
 
 export default BookingForm;
+
+

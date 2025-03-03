@@ -1,4 +1,4 @@
-/* Products Section */
+/* Products Section
 .products-container {
     text-align: center;
     padding: 50px 5%;
@@ -13,15 +13,13 @@
     color: #3182ce;
     margin-bottom: 20px;
   }
-  
-  /* Grid Layout */
+
   .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
   }
   
-  /* Product Card */
   .product-card {
     position: relative;
     border-radius: 12px;
@@ -38,7 +36,6 @@
     transform: translateY(-5px);
   }
   
-  /* Product Header */
   .product-header {
     display: flex;
     justify-content: space-between;
@@ -54,14 +51,12 @@
     font-size: 18px;
   }
   
-  /* Product Title */
   .product-title {
     font-size: 20px;
     margin: 10px 0;
     text-align: justify;
   }
   
-  /* Product Description */
   .product-description {
     font-size: 14px;
     opacity: 0.8;
@@ -69,14 +64,105 @@
 
   }
   
-  /* Product Image */
   .product-image img {
-    width: 80px;  /* Adjust size */
+    width: 80px;  
     height: auto;
     margin-top: -15px;
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 8px; 
     margin-right: 200px;
   }
   
   
-  
+   */
+
+   /* Products Container */
+.products-container {
+  text-align: center;
+  padding: 50px 5%;
+  background-color: #ffffff;
+  margin-bottom: 10%;
+}
+
+/* Title */
+.products-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #3182ce;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Product Card */
+.product-card {
+  position: relative;
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Product Header */
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Category */
+.category {
+  font-size: 14px;
+}
+
+/* Arrow */
+.arrow {
+  font-size: 18px;
+}
+
+/* Product Content */
+.product-content {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Product Image */
+.product-image img {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+/* Product Text */
+.product-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* Product Title */
+.product-title {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+/* Product Description */
+.product-description {
+  font-size: 14px;
+  opacity: 0.9;
+}

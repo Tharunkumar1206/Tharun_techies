@@ -1,7 +1,12 @@
+body {
+  background-color: #f5f7fa; /* Light grayish-blue */
+}
+
 .booking-container {
     background: #fff;
     padding: 40px;
     max-width: 600px;
+    background: #e3f2fd;
     margin: auto;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);

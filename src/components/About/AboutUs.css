@@ -1,95 +1,93 @@
 /* About Us Container */
 .about-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 10%;
-    background-color: #ffffff;
-    color: white;
-    position: relative;
-    margin-top: 3%;
-  }
-  
-  /* Left Side - Image */
-  .about-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    position: relative;
-  }
-  
-  .about-image img {
-    max-width: 90%;
-    height: auto;
-  }
-  
-  /* Right Side - Text */
-  .about-content {
-    flex: 1;
-    padding-left: 50px;
-  }
-  
-  .about-title {
-    font-size: 36px;
-    font-weight: bold;
-    color: #3182ce; /* Blue color */
-  }
-  
-  .about-text {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 15px 0;
-    color: #000;
-  }
-  
-  /* Button Styling */
-  .about-button {
-    background-color: #3182ce;
-    color: #000000;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .about-button:hover {
-    background-color: #2563eb;
-  }
-  
-  /* Stats Section */
-  .about-stats {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center; /* Center the row */
-    gap: 15px; /* Increased spacing */
-    font-size: 3px; /* Adjusted for better readability */
-    font-weight: bold;
-    color: #000;
-    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%;
+  background: linear-gradient(to right, #e3f2fd, #ffffff); /* Light blue gradient */
+  color: black;
+  position: relative;
+  border-radius: 10px;
+}
+
+/* Left Side - Image */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.about-image img {
+  max-width: 90%;
+  height: auto;
+}
+
+/* Right Side - Text */
+.about-content {
+  flex: 1;
+  padding-left: 50px;
+}
+
+.about-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #0b4f82; /* Darker blue for contrast */
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 15px 0;
+  color: #333;
+}
+
+/* Button Styling */
+.about-button {
+  background-color: #0b4f82; /* Dark blue */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.about-button:hover {
+  background-color: #2563eb;
+}
+
+/* Stats Section */
+.about-stats {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjusted spacing */
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
 }
 
 .about-stats span {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 12px 16px;
-    border-radius: 8px;
-    white-space: nowrap;
-    display: flex;
-    flex-direction: column; /* Ensures text goes below the number */
-    align-items: center; /* Center text inside span */
+  background: rgba(255, 255, 255, 0.8); /* Light background for better visibility */
+  padding: 12px 16px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-stats h1 {
-    color: #000; /* Dark black text */
-    font-size: 18px; /* Bigger font for emphasis */
-    margin-bottom: 5px; /* Spacing between number and text */
-}
-.about-stats p {
-  color: grey; /* Dark black text */
-  font-size: 5px; /* Bigger font for emphasis */
-  margin-bottom: 5px; /* Spacing between number and text */
+  color: #0b4f82; /* Dark blue */
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
-  
+.about-stats p {
+  color: grey;
+  font-size: 12px;
+  text-align: center;
+}

@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 220px;
+    min-height: 150px;
     transition: transform 0.3s ease;
   }
   
@@ -73,7 +73,7 @@
   .product-image img {
     width: 80px;  /* Adjust size */
     height: auto;
-    margin-top: -22px;
+    margin-top: -15px;
     border-radius: 8px; /* Rounded corners */
     margin-right: 200px;
   }

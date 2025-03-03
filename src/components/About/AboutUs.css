@@ -7,7 +7,7 @@
     background-color: #ffffff;
     color: white;
     position: relative;
-    margin-top: 10%;
+    margin-top: 3%;
   }
   
   /* Left Side - Image */
@@ -63,17 +63,33 @@
   .about-stats {
     margin-top: 20px;
     display: flex;
-    /* flex-wrap: wrap; */
-    gap: 5px;
-    font-size: 5px;
+    justify-content: center; /* Center the row */
+    gap: 15px; /* Increased spacing */
+    font-size: 3px; /* Adjusted for better readability */
     font-weight: bold;
-    color: #ccc;
-  }
-  
-  .about-stats span {
+    color: #000;
+    
+}
+
+.about-stats span {
     background: rgba(255, 255, 255, 0.1);
-    padding: 8px 12px;
-    border-radius: 6px;
+    padding: 12px 16px;
+    border-radius: 8px;
     white-space: nowrap;
-  }
+    display: flex;
+    flex-direction: column; /* Ensures text goes below the number */
+    align-items: center; /* Center text inside span */
+}
+
+.about-stats h1 {
+    color: #000; /* Dark black text */
+    font-size: 18px; /* Bigger font for emphasis */
+    margin-bottom: 5px; /* Spacing between number and text */
+}
+.about-stats p {
+  color: grey; /* Dark black text */
+  font-size: 5px; /* Bigger font for emphasis */
+  margin-bottom: 5px; /* Spacing between number and text */
+}
+
   

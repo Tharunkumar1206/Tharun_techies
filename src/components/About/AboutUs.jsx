@@ -22,11 +22,23 @@ const AboutUs = () => {
         <button className="about-button">Learn more</button>
 
         <div className="about-stats">
-          <span>250+ Parts Medical 3D Printed</span>
-          <span>100+ Happy Healthcare Customers</span>
-          <span>50+ Medical 3D Software Installed</span>
-          <span>75+ Medical 3D Printing Applications</span>
-        </div>
+          <span>
+              <h1>250+</h1>
+              <p>Parts Medical 3D Printed</p>
+          </span>
+          <span>
+              <h1>100+</h1>
+              <p>Happy Healthcare Customers</p>
+          </span>
+          <span>
+              <h1>50+</h1>
+              <p>Medical 3D Software Installed</p>
+          </span>
+          <span>
+              <h1>75+</h1>
+              <p>Medical 3D Printing Applications</p>
+          </span>
+      </div>
       </div>
     </section>
   );

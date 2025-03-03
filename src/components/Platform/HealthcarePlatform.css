@@ -37,13 +37,14 @@
   .doctor-image img {
     width: 300px;
     height: auto;
+    z-index: 30;
   }
   
   /* Services Section */
   .services-section {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-bottom: 40px;
     gap: 10px;
   }
   
@@ -59,6 +60,7 @@
   .service-card h2 {
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: justify;
   }
   
   .service-card p {
@@ -79,15 +81,24 @@
   .blue {
     background-color: #0073e6;
   }
+  .blue h2{
+    color:rgb(41, 68, 95);
+  }
   
   .green {
     background-color: #33cc33;
+  }
+  .green h2 {
+    color:rgb(37, 88, 37);
   }
   
   .orange {
     background-color: #ff9933;
   }
   
+  .orange h2{
+    color:rgb(162, 101, 39);rgb(161, 111, 61)
+  }
   /* Responsive Design */
   @media (max-width: 768px) {
     .header-section {

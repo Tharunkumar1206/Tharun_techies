@@ -71,11 +71,13 @@
   }
   
   .time-btn {
-    padding: 0px;
+    padding: 5px;
     border: 1px solid #ccc;
     background: #f0f0f0;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 12px;
+  
   }
   
   /* Phone Number Input */

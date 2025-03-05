@@ -81,7 +81,7 @@
 .front-image {
     width: 420px;
     position: relative;
-    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 20px #ffffff;
     transition: 0.3s;
     right: -41px;
     bottom: 20px;

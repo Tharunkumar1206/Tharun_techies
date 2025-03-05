@@ -11,7 +11,7 @@
     justify-content: space-between;
     padding: 0 20px;
     color: white;
-    z-index: 1; /* Ensures it stays above other content */
+    z-index: 10; /* Ensures it stays above other content */
 }
 
 /* Logo Styling */
@@ -36,7 +36,7 @@
 }
 
 .list_name li:hover {
-    color:rgb(229, 223, 214); /* Highlight color on hover */
+    color:#e5dfd6; /* Highlight color on hover */
 }
 
 /* Contact Button */
@@ -54,5 +54,5 @@
 }
 
 .nab-btn button:hover {
-    background-color:rgb(68, 101, 208);
+    background-color:#4465d0;
 }

@@ -30,7 +30,7 @@
     padding: 20px;
     width: 200px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px #000000;
     border-top: 5px solid;
     text-align: center;
   }

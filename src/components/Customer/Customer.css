@@ -1,11 +1,14 @@
 /* Customers Section */
 .customers-container {
     text-align: center;
-    padding: 50px 20px;
+    padding: 30px 20px;
     display: flex;
     flex-direction: row; /* Stack text and grid properly */
     align-items: center; /* Center-align contents */
     gap: 250px;
+    position:relative;
+    top:100px;
+    height:320px
 }
 
 .customers-text{

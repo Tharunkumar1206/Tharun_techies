@@ -1,7 +1,9 @@
 import React from "react";
 import "./Footer.css";
 import assets from "../../assets/assests";
-import { FaInstagram, FaFacebookF, FaLinkedinIn, FaYoutube, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaLinkedinIn, FaYoutube, } from "react-icons/fa";
+import { MdEmail, MdLocationPin } from "react-icons/md";
+import { IoCall } from "react-icons/io5";
 
 const Footer = () => {
   return (
@@ -48,10 +50,25 @@ const Footer = () => {
 
         {/* Contact Section */}
         <div className="footer-contact">
+          {/* <h3>Contact us</h3>
+          <div className="icon">
+
+           <span> <FaEnvelope/><p>sales@graft3d.com</p></span> 
+            <span><FaPhone/><p> 98404 78347</p></span>
+            <span><FaLocationPin/><p> 4/261, 1st Floor, Rajas Towers, Medavakkam Main Road, Kovilambakkam, Chennai – 600129, Tamil Nadu, India.</p></span>
+          </div> */}
           <h3>Contact us</h3>
-          <p><FaEnvelope /> sales@graft3d.com</p>
-          <p><FaPhone /> 98404 78347</p>
-          <p><FaMapMarkerAlt /> 4/261, 1st Floor, Rajas Towers, Medavakkam Main Road, Kovilambakkam, Chennai – 600129, Tamil Nadu, India.</p>
+          <div className="icon">
+            <p><MdEmail size={25}  /></p> <p className="desc">Sales@graft3d.com</p>
+          </div>
+          <div className="icon">
+            <p><IoCall size={25}/></p> <p className="desc">98404 78347</p>
+          </div>
+          <div className="icon location">
+            <p><MdLocationPin  size={30} /></p> <p className="desc">4/261, 1st Floor, Rajas Towers, Medavakkam Main Road, Kovilambakkam, Chennai – 600129, Tamil Nadu, India.</p>
+          </div>
+
+
         </div>
       </div>
 

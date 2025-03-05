@@ -82,14 +82,14 @@
     background-color: #0073e6;
   }
   .blue h2{
-    color:rgb(41, 68, 95);
+    color:#29445f;
   }
   
   .green {
     background-color: #33cc33;
   }
   .green h2 {
-    color:rgb(37, 88, 37);
+    color:#255825;
   }
   
   .orange {
@@ -97,7 +97,7 @@
   }
   
   .orange h2{
-    color:rgb(162, 101, 39);rgb(161, 111, 61)
+    color:#a26527;
   }
   /* Responsive Design */
   @media (max-width: 768px) {
@@ -125,3 +125,70 @@
     }
   }
   
+
+
+  /* .HP{
+    position:relative;
+  }
+
+  .Section1{
+    display:flex;
+    justify-content:space-evenly;
+    margin:10%;
+  }
+.Section1 img{
+  z-index:1;
+}
+
+  .SecLeft{
+
+  }
+  .Section2{
+    display:flex;
+    gap:8px;
+   justify-content:center;
+       position:absolute; 
+    top:345px;
+    right:-20px;
+    margin:0px 10%;
+  }
+  .Section2 .card-design1 {
+    background-color: #3b8ae5;
+    height: 260px;
+    width: 350px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .card-design1 h6 {
+    font-size: 20px;
+    color: blue;
+    
+  }
+  
+  .card-design1 p {
+    color: white;
+    padding: 10px;
+    text-align: justify;
+    font-size: 12px;
+    max-width: 90%;
+  }
+  
+  .Section2 .card-design2{
+    background-color:#309a30;
+    height:260px;
+    width:350px;
+    border-radius: 15px
+  }
+  .Section2 .card-design3{
+    background-color:#d35b21;
+    height:260px;
+    width:350px;
+    border-radius: 15px
+  } */
+

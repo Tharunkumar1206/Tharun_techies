@@ -1,6 +1,7 @@
 /* About Us Container */
 .about-container {
   display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
   align-items: center;
   justify-content: space-between;
   padding: 50px 10%;
@@ -15,6 +16,7 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
 }
 
@@ -68,26 +70,119 @@
   font-size: 14px;
   font-weight: bold;
   color: #333;
+  flex-wrap: wrap;
 }
 
 .about-stats span {
-  background: #ffffff; /* Light background for better visibility */
-  padding: 12px 16px;
+  background: #ffffff;
+  padding: 2px 4px;
   border-radius: 10px;
-  box-shadow: 2px 2px 10px #000000;
+  box-shadow: 1px 2px 2px #000000;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 18px;
 }
 
 .about-stats h1 {
-  color: #0b4f82; /* Dark blue */
-  font-size: 20px;
-  margin-bottom: 5px;
+  color: #0b4f82;
+  font-size: 14px;
+  margin-bottom: -7px;
 }
 
 .about-stats p {
   color: grey;
-  font-size: 12px;
+  font-size: 7px;
   text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .about-content {
+    padding-left: 0;
+    max-width: 90%;
+  }
+
+  .about-title {
+    font-size: 32px;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+
+  .about-button {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .about-stats {
+    gap: 15px;
+  }
+
+  .about-image img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 30px 5%;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-text {
+    font-size: 14px;
+  }
+
+  .about-button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .about-stats {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-image img {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 20px 5%;
+  }
+
+  .about-title {
+    font-size: 24px;
+  }
+
+  .about-text {
+    font-size: 13px;
+  }
+
+  .about-button {
+    font-size: 12px;
+    padding: 7px 12px;
+  }
+
+  .about-stats {
+    /* flex-direction: column; */
+    align-items: center;
+  }
+
+  .about-image img {
+    max-width: 70%;
+  }
 }

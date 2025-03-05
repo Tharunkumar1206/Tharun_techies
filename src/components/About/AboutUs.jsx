@@ -27,15 +27,15 @@ const AboutUs = () => {
               <p>Parts Medical 3D Printed</p>
           </span>
           <span>
-              <h1>100+</h1>
+              <h1>50+</h1>
               <p>Happy Healthcare Customers</p>
           </span>
           <span>
-              <h1>50+</h1>
+              <h1>75+</h1>
               <p>Medical 3D Software Installed</p>
           </span>
           <span>
-              <h1>75+</h1>
+              <h1>100+</h1>
               <p>Medical 3D Printing Applications</p>
           </span>
       </div>

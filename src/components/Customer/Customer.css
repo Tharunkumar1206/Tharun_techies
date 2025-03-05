@@ -3,48 +3,52 @@
     text-align: center;
     padding: 30px 20px;
     display: flex;
-    flex-direction: row; /* Stack text and grid properly */
-    align-items: center; /* Center-align contents */
-    gap: 250px;
-    position:relative;
-    top:100px;
-    height:320px
+    flex-direction: row; /* Arrange text and logos side by side */
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* Adjust gap for better spacing */
+    position: relative;
+    top: 100px;
+    height: auto;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
-.customers-text{
-    margin-left: 30px;
+/* Text Section */
+.customers-text {
+    max-width: 450px;
+    text-align: left;
 }
+
 /* Heading Styles */
 .customers-text h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #007bff; /* Blue color */
     margin-bottom: 10px;
-    text-align: justify;
 }
 
 /* Description Text */
 .customers-text p {
     color: #555;
+    font-size: 1rem;
     max-width: 400px;
-    margin: 0 auto 20px;
-    text-align: justify;
+    margin-bottom: 20px;
 }
 
 /* Grid Layout for Customer Logos */
 .customers-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
     gap: 20px;
-    justify-content: start; /* Align items to the left */
-    max-width: 400px; /* Adjust width as needed */
+    justify-content: center;
+    max-width: 450px; /* Adjust width as needed */
 }
 
 /* Image Styling */
 .customer-logo {
-    height: 40px;
+    height: 50px;
     width: auto;
-    transition: transform 0.3s ease-in-out; /* Add hover effect */
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Hover Effect */
@@ -53,16 +57,58 @@
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+
+/* Medium Screens (Tablets) */
+@media screen and (max-width: 992px) {
+    .customers-container {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+        gap: 30px;
+    }
+
+    .customers-text {
+        text-align: center;
+        max-width: 80%;
+    }
+
+    .customers-text h2 {
+        font-size: 1.6rem;
+    }
+
     .customers-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
-        max-width: 300px;
+        grid-template-columns: repeat(3, 1fr); /* 2 columns */
+        max-width: 350px;
     }
 }
 
-@media screen and (max-width: 480px) {
+/* Small Screens (Mobile) */
+@media screen and (max-width: 576px) {
+    .customers-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .customers-text {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .customers-text h2 {
+        font-size: 1.4rem;
+    }
+
+    .customers-text p {
+        font-size: 0.9rem;
+    }
+
     .customers-grid {
-        grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+        grid-template-columns: repeat(1, 1fr); /* 1 column */
         max-width: 200px;
+    }
+
+    .customer-logo {
+        height: 40px;
+        width: 250px             /* Reduce image size for better fit */
     }
 }

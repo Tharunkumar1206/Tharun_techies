@@ -1,125 +1,184 @@
+/* Footer Section */
 .footer {
-    background: linear-gradient(to right, #f9f9f9, #f1f5fd);
-    padding: 20px 20px;
-    font-family: "Arial", sans-serif;
-    color: #333;
-    margin-top: 4%;
-  }
-  
+  background: linear-gradient(to right, #f9f9f9, #f1f5fd);
+  padding: 40px 20px;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  margin-top: 4%;
+}
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 20px;
+}
+
+/* Footer Left */
+.footer-left {
+  max-width: 300px;
+}
+
+/* Footer Card */
+.footer-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px #000000;
+  text-align: center;
+  width: 250px;
+}
+
+.footer-card p{
+  margin-top:8px;
+}
+
+/* Logo */
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons svg {
+  font-size: 20px;
+  cursor: pointer;
+  color: #0056d2;
+  transition: 0.3s;
+}
+
+.social-icons svg:hover {
+  color: #003e99;
+}
+
+/* Footer Middle and Right Sections */
+.footer-middle,
+.footer-right,
+.footer-contact {
+  max-width: 250px;
+}
+
+.footer-middle h3,
+.footer-right h3,
+.footer-contact h3 {
+  color: #0056d2;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-middle ul,
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-middle li,
+.footer-right li {
+  margin: 5px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-middle li:hover,
+.footer-right li:hover {
+  color: #0056d2;
+}
+
+/* Footer Contact Section */
+.icon {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: #0056d2;
+}
+
+.desc {
+  color: black;
+}
+
+.icon p {
+  margin: 5px 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+/* Responsive Design */
+
+/* Medium Screens (Tablets) */
+@media screen and (max-width: 992px) {
   .footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    text-align: left;
+      align-items: normal;
+      text-align: justify;
   }
-  
-  .footer-left {
-    max-width: 300px;
-  }
-  
-  .footer-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px #000000;
-    text-align: center;
-  }
-  
-  .logo {
-    width: 120px;
-    margin-bottom: 10px;
-    margin-right:120px
-  }
-  
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-  }
-  
-  .social-icons svg {
-    font-size: 20px;
-    cursor: pointer;
-    color: #0056d2;
-    transition: 0.3s;
-  }
-  
-  .social-icons svg:hover {
-    color: #003e99;
-  }
-  
+
   .footer-middle,
   .footer-right,
   .footer-contact {
-    max-width: 250px;
+      max-width: 100%;
+      text-align: center;
   }
-  
+
+  .icon {
+      justify-content: center;
+  }
+}
+
+/* Small Screens (Mobile) */
+@media screen and (max-width: 576px) {
+  .footer {
+      padding: 30px 10px;
+  }
+
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-card{
+    width: 354px;
+  }
+
   .footer-middle h3,
   .footer-right h3,
   .footer-contact h3 {
-    color: #0056d2;
-    font-size: 18px;
-    margin-bottom: 10px;
+      font-size: 16px;
   }
-  
-  .footer-middle ul,
-  .footer-right ul {
-    list-style: none;
-    padding: 0;
-  }
-  
+
   .footer-middle li,
   .footer-right li {
-    margin: 5px 0;
-    cursor: pointer;
-    transition: 0.3s;
+      font-size: 14px;
   }
-  
-  .footer-middle li:hover,
-  .footer-right li:hover {
-    color: #0056d2;
-  }
-/*   
-  .footer-contact p {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-    margin: 5px 0;
-  }
-  
-  .footer-contact svg {
-    color: #0056d2;
-  }
-   */
-
-   .footer-contact{
-
-   }
-
-.icon{
-  display:flex; 
-  gap:6px;
-  align-items:start;
-  justify-content:start;
-  color:#0056d2;
-}
-.desc{
-  color:black;
-}
-.icon p{
-  margin:5px 0;
-}
-
-
 
   .footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-    color: #777;
-    border-top: 1px solid #ddd;
-    padding-top: 10px;
+      font-size: 12px;
   }
-  
+
+  .icon {
+      justify-content: center;
+  }
+
+  .social-icons {
+      gap: 10px;
+  }
+
+  .social-icons svg {
+      font-size: 18px;
+  }
+}

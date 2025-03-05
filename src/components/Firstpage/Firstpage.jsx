@@ -1,15 +1,25 @@
 import React from "react";
 import "./Firstpage.css";
 import assets from "../../assets/assests";
+import BackgroundImage from "../../assets/Image.png"; // Import the image
 
 const Firstpage = () => {
   return (
-    <div className="hero-container">
+    <div
+      className="hero-container"
+      style={{
+        backgroundImage: `url(${BackgroundImage})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "873.56px 920.27px",
+      }}
+    >
       <div className="hero-content">
         <h3>
           <span className="highlight">Graft 3D Healthcare</span>
         </h3>
-        <h1>Medical. 3D Printing <br /> Solution Provider</h1>
+        <h1>
+          Medical. 3D Printing <br /> Solution Provider
+        </h1>
         <p>
           We Design and Develop Custom Healthcare 3D printed products,
           Healthcare 3D printing packages and Healthcare 3D services for
